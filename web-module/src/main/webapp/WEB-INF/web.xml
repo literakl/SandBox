@@ -4,26 +4,34 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
-    <listener>
-        <listener-class>
-            org.apache.commons.fileupload.servlet.FileCleanerCleanup
-        </listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>-->
+            <!--org.apache.commons.fileupload.servlet.FileCleanerCleanup-->
+        <!--</listener-class>-->
+    <!--</listener>-->
 
+    <!--<servlet>-->
+        <!--<servlet-name>FileUploader</servlet-name>-->
+        <!--<servlet-class>cz.literak.sandbox.so.http.upload.FileUploadServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet>-->
+        <!--<servlet-name>FileReceiver</servlet-name>-->
+        <!--<servlet-class>cz.literak.sandbox.so.http.upload.FileReceiveServlet</servlet-class>-->
+    <!--</servlet>-->
     <servlet>
-        <servlet-name>FileUploader</servlet-name>
-        <servlet-class>cz.literak.sandbox.so.http.upload.FileUploadServlet</servlet-class>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>cz.literak.sandbox.so.register.Controller</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>FileReceiver</servlet-name>
-        <servlet-class>cz.literak.sandbox.so.http.upload.FileReceiveServlet</servlet-class>
-    </servlet>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>FileUploader</servlet-name>-->
+        <!--<url-pattern>/uploader</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>FileReceiver</servlet-name>-->
+        <!--<url-pattern>/receiver</url-pattern>-->
+    <!--</servlet-mapping>-->
     <servlet-mapping>
-        <servlet-name>FileUploader</servlet-name>
-        <url-pattern>/uploader</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>FileReceiver</servlet-name>
-        <url-pattern>/receiver</url-pattern>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/RegistrationController</url-pattern>
     </servlet-mapping>
 </web-app>
